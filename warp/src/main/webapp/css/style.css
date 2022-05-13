@@ -1,0 +1,192 @@
+/* 
+    Author     : Petros
+*/
+.initial, h3, p {
+    text-align: center;
+}
+body {
+    background-color: #ececec;
+    margin: 0;
+    position: relative;
+    padding-bottom: 40px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+button {
+    max-width: 400px;
+}
+.login_mode input {
+    margin-left: 8px;
+}
+.login_mode img {
+    text-align: center;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.login_mode textarea{
+    width: 400px;
+}
+#inner_login {
+    max-width: none;
+}
+.view_post, .username-list button {
+    background-color: transparent;
+    padding: 0;
+    font-size: 16px;
+    color: #000;
+    width: auto;
+    height: auto;
+    font-weight: normal;
+    border: none;
+}
+.view_post:hover, .username-list button:hover {
+    color: #226fbe;
+}
+.view_post {
+    display: block;
+    margin: 0 auto;
+}
+.username-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.username-list button {
+    margin: 2px 10px;
+}
+.members-table {
+    margin: 25px auto;
+    text-align: center;
+}
+.esc_map {
+	display: none;
+	position: relative;
+	z-index: 15;
+	color: #fff;
+	background-color: blue;
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+}
+.post-map {
+    max-width: 600px;
+    height: 400px;
+    margin: 10px auto;
+}
+.auto-align {
+    display: block;
+    margin: 10px auto;
+}
+.map {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+.container {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+}
+h1 {
+	margin-top: 0;
+	text-align: center;
+}
+.reversegeo {
+	text-align: center;
+	display: none;
+	margin-bottom: 15px;
+	cursor: pointer;
+	background-color: #dd2e2e;
+	color: #fff;
+}
+.input-item {
+	margin: 5px 0;
+}
+.input-item:first-child {
+	margin-top: 5px;
+}
+.input-item.verify {
+	position: relative;
+}
+.verification_error {
+	color: #da4242;
+	display: block;
+}
+.input-item input, .input-item select {
+	float: right;
+	padding-left: 5px;
+}
+input[name="gender"] {
+	float: none;
+	vertical-align: middle;
+}
+fieldset {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+textarea {
+	display: block;
+	width: 100%;
+	height: 80px;
+	box-sizing: border-box;
+}
+button {
+	background-color: #226fbe;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	border: 2px solid transparent;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 25px;
+	margin-top: 10px;
+	cursor: pointer;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+button:hover {
+	background-color: transparent;
+	border-color: #226fbe;
+}
+.map-btn {
+	display: none;
+	text-align: center;
+	background-color: #226fbe;
+	border-radius: 15px;
+	margin: 12px 0;
+	color: #fff;
+	padding: 4px 0;
+	cursor: pointer;
+}
+.record {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.input-item label {
+		display: block;
+	}
+	.input-item input, .input-item select {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.input-item fieldset label {
+		display: inline;
+	}
+	.input-item fieldset input {
+		width: auto;
+	}
+}
